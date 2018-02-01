@@ -9,6 +9,9 @@ sudo chmod +x /path/to/live-to-local-db.sh
 ```
 a go.
 
+And the path to mysql is expected under: __/Applications/MAMP/Library/bin/mysql__
+If that is not the case for you, change it accordingly.
+
 ## Warning
 __This script inlines the password on the shell.__
 You won't see it, but it will be saved in your history.
