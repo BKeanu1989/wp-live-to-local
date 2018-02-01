@@ -9,7 +9,7 @@ sudo chmod +x /path/to/live-to-local-db.sh
 a go.
 
 __This script inlines the password on the shell.__
-You won't see it, but it will be saved in your bash history.
+You won't see it, but it will be saved in your history.
 
 You could use something like expect to find a workaround.
 
