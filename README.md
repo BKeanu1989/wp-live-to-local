@@ -9,7 +9,7 @@ sudo chmod +x /path/to/live-to-local-db.sh
 ```
 a go.
 
-And the path to mysql is expected under: __/Applications/MAMP/Library/bin/mysql__
+The path to mysql is expected under: __/Applications/MAMP/Library/bin/mysql__
 If that is not the case for you, change it accordingly.
 
 ## Warning
