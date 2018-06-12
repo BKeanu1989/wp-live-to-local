@@ -19,6 +19,7 @@ read -sp 'MySQL Password: ' passvar
 CREATE DATABASE IF NOT EXISTS \`$database\`;
 use \`$database\`;
 source $importFile;
+UPDATE \`${prefix}posts` SET guid = replace(guid, "${URL}", "${localURL}");
 UPDATE \`${prefix}options\` SET option_value = replace(option_value, "${URL}", "${localURL}") WHERE option_name = 'home' OR option_name = 'siteurl';
 UPDATE \`${prefix}posts\` SET post_content = replace(post_content, "${URL}", "${localURL}");
 UPDATE \`${prefix}postmeta\` SET meta_value = replace(meta_value, "${URL}", "${localURL}");
